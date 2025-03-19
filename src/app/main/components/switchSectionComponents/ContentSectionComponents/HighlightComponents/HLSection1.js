@@ -1,6 +1,6 @@
 const HLSection1 = () => {
     return (
-        <div className="bg-gradient-to-r from-green-300 to-yellow-400 p-8 rounded-lg">
+        <div className="bg-gradient-to-r from-green-300 to-yellow-400 p-8 rounded-2xl">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
                 {/* Video Section */}
                 <div className="relative rounded-lg overflow-hidden shadow-lg">

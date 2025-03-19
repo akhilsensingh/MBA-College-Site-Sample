@@ -9,7 +9,7 @@ const HLSection4 = () => {
     ];
 
     return (
-        <div className="bg-gradient-to-r from-white via-gray-100 to-white py-16 px-8 flex flex-col items-center">
+        <div className="bg-white py-16 px-8 flex flex-col items-center">
             {/* Title */}
             <h2 className="text-3xl font-bold text-black flex items-center space-x-2">
                 Explore Masters' Union 

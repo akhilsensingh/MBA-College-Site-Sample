@@ -1,6 +1,6 @@
 const HLSection2 = () => {
     return (
-        <div className="bg-white p-8 rounded-lg shadow-md">
+        <div className="bg-white p-8 rounded-2xl shadow-md">
             {/* Header Section */}
             <h2 className="text-3xl font-bold text-black">
                 Our PG Programmes Are Designed <br /> 
