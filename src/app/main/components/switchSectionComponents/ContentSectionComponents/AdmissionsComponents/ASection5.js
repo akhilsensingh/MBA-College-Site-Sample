@@ -1,27 +1,23 @@
 import React from 'react';
 
-const ASection5 = () => {
-  const feeData = [
-    { round: 'Round 1', admissionFee: '₹90,000/-', tuitionFee: '₹28,48,160/-', totalPayable: '₹29,38,160/-' },
-    { round: 'Round 2', admissionFee: '₹90,000/-', tuitionFee: '₹28,48,160/-', totalPayable: '₹29,38,160/-' },
-    { round: 'Round 3', admissionFee: '₹1,25,000/-', tuitionFee: '₹28,48,160/-', totalPayable: '₹29,73,160/-' }
-  ];
+const ASection5 = ({ data }) => {
+  const { title, description, videoSrc, feeTitle, feeData } = data;
 
   return (
     <div className="bg-gradient-to-b from-yellow-400 to-yellow-500 min-h-screen p-8">
       <div className="bg-white p-8 rounded-xl shadow-lg">
-        <h2 className="text-2xl font-bold">Getting Into Masters' Union</h2>
-        <p className="mt-4 text-gray-600">Dive into this exclusive Q&A session where our admissions team answers all your questions about the process.</p>
+        <h2 className="text-2xl font-bold">{title}</h2>
+        <p className="mt-4 text-gray-600">{description}</p>
         <div className="mt-8">
           <video className="w-full rounded-lg" controls>
-            <source src="/path-to-your-video.mp4" type="video/mp4" />
+            <source src={videoSrc} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
       </div>
 
       <div className="mt-12">
-        <h2 className="text-3xl font-bold">Fee Structure (PGP TBM and PGP TBM YLC)</h2>
+        <h2 className="text-3xl font-bold">{feeTitle}</h2>
         <table className="w-full mt-6 border border-gray-300">
           <thead>
             <tr className="bg-black text-white">

@@ -1,18 +1,5 @@
 import React from 'react';
 
-const days = ['Mon 22', 'Tue 23', 'Wed 24', 'Thu 25', 'Fri 26', 'Sat 27', 'Sun 21'];
-const hours = Array.from({ length: 13 }, (_, i) => `${9 + i} AM`);
-
-const events = [
-  { day: 0, time: '10 AM', title: 'Mid-Term Breakfast', type: 'blue', details: 'with Resident Faculty' },
-  { day: 1, time: '11 AM', title: 'Consulting Club', type: 'blue', details: 'Workshop on Case Math' },
-  { day: 2, time: '12 PM', title: 'How to Sell Without Selling', type: 'red', details: 'Mr. Vignesh Rao, VP, Zomato' },
-  { day: 3, time: '1 PM', title: 'Mock Interview', type: 'yellow', details: 'Strategy Consulting Roles' },
-  { day: 4, time: '2 PM', title: 'Networking Breakfast', type: 'blue', details: '' },
-  { day: 5, time: '3 PM', title: 'Creator Challenge', type: 'orange', details: 'Building Your Brand on Social Media' },
-  { day: 6, time: '4 PM', title: 'Venture Initiation Programme', type: 'orange', details: 'Demo Day' },
-];
-
 const getColor = (type) => {
   switch (type) {
     case 'blue': return 'bg-blue-100 text-blue-700';
@@ -23,7 +10,9 @@ const getColor = (type) => {
   }
 };
 
-const CSection4 = () => {
+const CSection4 = ({ data }) => {
+  const { days, hours, events } = data;
+
   return (
     <div className="p-6 bg-black rounded-2xl text-white">
       <h2 className="text-3xl font-bold mb-4">A Glimpse Into Your Weekly Schedule</h2>

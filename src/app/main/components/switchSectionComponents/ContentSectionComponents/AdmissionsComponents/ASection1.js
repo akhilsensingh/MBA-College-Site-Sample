@@ -1,28 +1,12 @@
 import React from 'react';
 
-const criteria = [
-  {
-    id: '01',
-    title: 'Internships and Work Experience',
-    image: '/path/to/image1.png'
-  },
-  {
-    id: '02',
-    title: 'Academics & Co-Curricular',
-    image: '/path/to/image2.png'
-  },
-  {
-    id: '03',
-    title: 'Communication',
-    image: '/path/to/image3.png'
-  }
-];
+const ASection1 = ({ data }) => {
+  const { subtitle, title, criteria } = data;
 
-const ASection1 = () => {
   return (
     <div className="py-12 px-6">
-      <p className="text-sm text-gray-500 mb-2">⭐ ENROLLMENT CHECKLIST</p>
-      <h2 className="text-3xl text-black font-bold mb-8">Admission Criteria</h2>
+      <p className="text-sm text-gray-500 mb-2">{subtitle}</p>
+      <h2 className="text-3xl text-black font-bold mb-8">{title}</h2>
       <div className="grid md:grid-cols-3 gap-8">
         {criteria.map((item) => (
           <div key={item.id} className="relative group overflow-hidden rounded-xl shadow-lg">

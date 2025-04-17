@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import ContentSection from "@/app/main/components/switchSectionComponents/ContentSection";
 import SwitchTabs from './components/switchSectionComponents/SwitchTabs';
 import HeadSection from './components/headSection';
+import Header from './components/header/Header';
 
 const MainPage = () => {
     const [selectedTab, setSelectedTab] = useState('Highlights');
@@ -27,6 +28,7 @@ const MainPage = () => {
 
     return (
         <div className="bg-black text-white min-h-screen flex flex-col items-center justify-center p-2">
+            <Header/>
             <HeadSection />
             {/* Switchable Tabs */}
             <div className={`w-full flex justify-center ${isSticky ? 'sticky top-0 z-50' : ''}`}>

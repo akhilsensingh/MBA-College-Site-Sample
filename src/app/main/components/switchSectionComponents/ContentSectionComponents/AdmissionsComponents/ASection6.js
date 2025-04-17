@@ -1,20 +1,7 @@
 import React from 'react';
 
-const ASection6 = () => {
-  const hostelData = [
-    { title: 'No of Rooms', premium: '62', budget: '62' },
-    { title: 'Room Size', premium: '120 Sq. Ft + Balcony 24 Sq. Ft', budget: '80 Sq. Ft' },
-    { title: 'Washroom Size', premium: '33 Sq. Ft', budget: '25 Sq. Ft' },
-    { title: 'Window', premium: 'Has attached balcony', budget: 'Window opens into shaft' },
-    { title: 'Distance from Campus', premium: '5 kms from DLF CyberPark Campus', budget: '5 kms from DLF CyberPark Campus' },
-    { title: 'Common Area', premium: 'Large common facilities on the ground floor', budget: 'Large common facilities on the ground floor' },
-    { title: 'Type of Rooms', premium: 'Single occupancy (dedicated washroom, not attached)', budget: 'Single occupancy (dedicated washroom, not attached)' }
-  ];
-
-  const pricingData = [
-    { category: 'Single Room', stay: '16 months', tbmPrice: '₹6,45,120', ylcPrice: '₹6,45,120', deposit: '₹50,000' },
-    { category: 'Twin Room', stay: '16 months', tbmPrice: '₹3,94,240', ylcPrice: '₹3,94,240', deposit: '₹50,000' }
-  ];
+const ASection6 = ({ data }) => {
+  const { hostelData, pricingData } = data;
 
   return (
     <div className="p-6 text-black">

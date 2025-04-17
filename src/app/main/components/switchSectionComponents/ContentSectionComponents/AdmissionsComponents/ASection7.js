@@ -1,26 +1,15 @@
 import React, { useState } from 'react';
 
-const scholarships = [
-  "Manoj Kohli Merit-based Scholarship",
-  "Rajni Thethi Scholarship for Women",
-  "Chairman’s Diversity Scholarship",
-  "MU Scholarship for Technology Leaders",
-  "P. Dwarakanath India-bound Scholarship",
-  "Pankaj Bansal Scholarship for Young Leaders",
-  "Founders’ Bursary for Entrepreneurs",
-  "Sudarshan Kohli Memorial Scholarship",
-];
-
-const ASection7 = () => {
+const ASection7 = ({ data }) => {
+  const { title, image, scholarships } = data;
   const [selectedScholarship, setSelectedScholarship] = useState(scholarships[0]);
 
   return (
     <div className="bg-black p-4 rounded-2xl text-white py-10">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold">Investing in the Future of Our Students</h2>
-        
+        <h2 className="text-3xl font-bold">{title}</h2>
         <div className="my-8">
-          <img src="/path-to-image" alt="Scholarship Event" className="w-full h-80 object-cover rounded-lg" />
+          <img src={image} alt="Scholarship Event" className="w-full h-80 object-cover rounded-lg" />
         </div>
 
         <div className="flex gap-8">
@@ -44,11 +33,11 @@ const ASection7 = () => {
               <h3 className="text-xl font-semibold">{selectedScholarship}</h3>
               <p className="mt-4">The {selectedScholarship} extends financial support to candidates with exceptional academic records and accomplishments. These scholarships are offered as partial waivers of the tuition fee, as decided by the admissions committee.</p>
             </div>
-            
+
             <ul className="mt-8">
               {scholarships.map((scholarship, index) => (
-                <li 
-                  key={index} 
+                <li
+                  key={index}
                   className={`cursor-pointer py-2 ${selectedScholarship === scholarship ? 'text-yellow-400' : ''}`}
                   onClick={() => setSelectedScholarship(scholarship)}
                 >
