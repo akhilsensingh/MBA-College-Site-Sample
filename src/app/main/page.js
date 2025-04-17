@@ -28,7 +28,9 @@ const MainPage = () => {
 
     return (
         <div className="bg-black text-white min-h-screen flex flex-col items-center justify-center p-2">
-            <Header/>
+            <header className="fixed px-20 top-0 left-0 w-full z-50">
+                <Header />
+            </header>
             <HeadSection />
             {/* Switchable Tabs */}
             <div className={`w-full flex justify-center ${isSticky ? 'sticky top-0 z-50' : ''}`}>

@@ -13,7 +13,7 @@ import HLSection1 from "./ContentSectionComponents/HighlightComponents/HLSection
 import HLSection2 from "./ContentSectionComponents/HighlightComponents/HLSection2";
 import HLSection3 from "./ContentSectionComponents/HighlightComponents/HLSection3";
 import HLSection4 from "./ContentSectionComponents/HighlightComponents/HLSection4";
-import data from '@/app/main/data.json';
+import data from '@/app/data.json';
 
 const ContentSection = ({ selectedTab }) => {
     switch (selectedTab) {
