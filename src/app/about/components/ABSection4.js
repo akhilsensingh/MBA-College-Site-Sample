@@ -1,11 +1,10 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
-import Image from 'next/image';
+import { Timeline } from "@/app/components/ui/TimeLine";
 
 const milestones = [
   {
-    year: 2020,
+    year: "2020",
     title: 'The Genesis - Masters’ Union is Established',
     points: [
       'The first PGP TBM application process begins',
@@ -14,7 +13,7 @@ const milestones = [
     ],
   },
   {
-    year: 2021,
+    year: "2021",
     title: 'The Advancement - All About Our Firsts',
     points: [
       'Our first cohort graduates',
@@ -23,7 +22,7 @@ const milestones = [
     ],
   },
   {
-    year: 2022,
+    year: "2022",
     title: 'The Expansion - New Additions',
     points: [
       'Our second campus is built',
@@ -32,7 +31,7 @@ const milestones = [
     ],
   },
   {
-    year: 2023,
+    year: "2023",
     title: 'The Achievements',
     points: [
       'Our first Demo Day where students pitched their startups to 100+ VCs',
@@ -40,7 +39,7 @@ const milestones = [
     ],
   },
   {
-    year: 2024,
+    year: "2024",
     title: 'The Journey Ahead',
     points: [
       'We grow from a 50-member team to more than 300',
@@ -50,67 +49,36 @@ const milestones = [
   },
 ];
 
-const ABSection4 = () => {
-  const containerRef = useRef(null);
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  useEffect(() => {
-    const sections = containerRef.current.querySelectorAll('.milestone-section');
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const index = Number(entry.target.getAttribute('data-index'));
-          if (entry.isIntersecting) {
-            setActiveIndex(index);
-          }
-        });
-      },
-      { root: null, rootMargin: '0px', threshold: 0.4 }
-    );
-
-    sections.forEach((section) => observer.observe(section));
-    return () => sections.forEach((section) => observer.unobserve(section));
-  }, []);
-
-  return (
-    <div className="bg-black text-white px-6 md:px-12 py-12">
-      <h2 className="text-3xl md:text-4xl font-bold mb-4">A Journey Through Our Milestones</h2>
-      <div className="flex flex-col lg:flex-row gap-12">
-        {/* Left Timeline Content */}
-        <div className="lg:w-1/2" ref={containerRef}>
-          {milestones.map((item, index) => (
-            <div
-              key={item.year}
-              data-index={index}
-              className={`milestone-section py-10 transition-opacity duration-500 ${
-                activeIndex === index ? 'opacity-100' : 'opacity-60'
-              }`}
-            >
-              <div className={`text-lg font-semibold text-yellow-400`}>{item.year}</div>
-              <div className="text-white font-bold mt-2">{item.title}</div>
-              <ul className="mt-4 space-y-2 text-gray-300 text-sm list-disc list-inside">
-                {item.points.map((point, idx) => (
-                  <li key={idx}>{point}</li>
-                ))}
-              </ul>
-            </div>
+export default function ABSection4Timeline() {
+  const timelineData = milestones.map((milestone) => ({
+    title: milestone.year,
+    content: (
+      <div>
+        <h3 className="text-sm font-semibold text-yellow-500 mb-1">{milestone.title}</h3>
+        <ul className="list-disc list-inside text-xs md:text-sm text-neutral-700 dark:text-neutral-300 space-y-1">
+          {milestone.points.map((point, idx) => (
+            <li key={idx}>{point}</li>
           ))}
-        </div>
-
-        {/* Right Fixed Visual */}
-        <div className="lg:w-1/2 lg:sticky lg:top-24 flex items-center justify-center">
-          <Image
-            src="/unique-idea.jpg" // replace with your actual image path
-            alt="Video placeholder"
-            width={640}
-            height={360}
-            className="rounded-xl shadow-lg"
+        </ul>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+          <img
+            src="/unique-idea.jpg"
+            alt={`Milestone for ${milestone.year}`}
+            width={500}
+            height={300}
+            className="h-24 md:h-40 w-full rounded-lg object-cover shadow-md"
           />
         </div>
       </div>
+    ),
+  }));
+
+  return (
+    <div className="relative w-full overflow-clip bg-black text-white py-12 px-6 md:px-12">
+      <h2 className="text-3xl md:text-4xl font-bold mb-10 text-white">
+        A Journey Through Our Milestones
+      </h2>
+      <Timeline data={timelineData} />
     </div>
   );
-};
-
-export default ABSection4;
+}

@@ -9,8 +9,11 @@ import ABSection4 from './components/ABSection4';
 import ABSection5 from './components/ABSection5';
 import ABSection6 from './components/ABSection6';
 import ABSection7 from './components/ABSection7';
+import data from '@/app/data.json';
 
 const MainPage = () => {
+  const about = data.about;
+
   return (
     <div className="bg-black text-white min-h-screen">
       {/* Fixed Navbar */}
@@ -20,13 +23,13 @@ const MainPage = () => {
 
       {/* Main content (with top padding to prevent content from hiding under navbar) */}
       <main className="pt-[80px] px-4">
-        <ABSection1 />
-        <ABSection2 />
-        <ABSection3 />
-        <ABSection4 />
-        <ABSection5 />
-        <ABSection6 />
-        <ABSection7 />
+        <ABSection1 data={about.ABSection1} />
+        <ABSection2 data={about.ABSection2} />
+        <ABSection3 data={about.ABSection3} />
+        <ABSection4 data={about.ABSection4} />
+        <ABSection5 data={about.ABSection5} />
+        <ABSection6 data={about.ABSection6}/>
+        <ABSection7 data={about.ABSection7}/>
         {/* Add more sections here */}
       </main>
     </div>

@@ -1267,5 +1267,211 @@
                 }
             ]
         }
+    },
+    "about": {
+      "ABSection1": {
+        "title": "Reimagine Business Education",
+        "highlight": "Business Education",
+        "description": "At Masters' Union, we believe in learning business by doing business. Through collaboration of industry experts and academic leaders, we aim to revolutionise business education with a tech-centric and industry-driven approach.",
+        "image": "/a709e6d0-814a-43ba-b7c6-a97fbf3cd7a4.png",
+        "videoInfo": {
+          "heading": "Masters' Union In",
+          "duration": {
+            "minutes": 3
+          }
+        },
+        "goal": {
+          "title": "Goal 2030",
+          "description": "Reach Global Top 10 Ranking"
+        }
+      },
+      "ABSection2": {
+        "vision": {
+          "title": "To iterate an education model that maximises human potential",
+          "sub": "\u201cWhy\u201d Masters\u2019 Union Exists",
+          "image": "/vision.jpg",
+          "points": [
+            "The age-old education model is built on memorization, conformity & indoctrination",
+            "We want to build a model that's hands-on, rooted in reality & has a high degree of throughput"
+          ]
+        },
+        "mission": {
+          "title": "To build a globally eminent institution that continuously challenges pedagogy & processes to deliver unparalleled human growth",
+          "sub": "\u201cWhat\u201d Masters\u2019 Union is building",
+          "image": "/mission.jpg",
+          "points": [
+            "By not being a prisoner of our own legacy & continuously iterating on curriculum",
+            "By teaching as if a student is not a vessel that needs filling, but a candle that needs lighting",
+            "By always thinking big, striving to paint outside the lines while always being student centric"
+          ]
+        }
+      },
+      "ABSection3": {
+        "subtitle": "\u2726 Global Ambition",
+        "title": "Our aim is to become a global top 10 B-school",
+        "button": "Read More",
+        "image": "/global-ambition.png"
+      },
+      "ABSection4": {
+        "milestones": [
+          {
+            "year": 2020,
+            "title": "The Genesis - Masters\u2019 Union is Established",
+            "points": [
+              "The first PGP TBM application process begins",
+              "Renowned founding faculty join Masters\u2019 Union",
+              "The first PGP TBM class commences with 66 students"
+            ]
+          },
+          {
+            "year": 2021,
+            "title": "The Advancement - All About Our Firsts",
+            "points": [
+              "Our first cohort graduates",
+              "Unveiling our first placement report, with avg. package of \u20b929.12 lakh",
+              "Our first international recruitment at Google Dublin"
+            ]
+          },
+          {
+            "year": 2022,
+            "title": "The Expansion - New Additions",
+            "points": [
+              "Our second campus is built",
+              "Our flagship UG Programme with 150 students is launched",
+              "Launch of our PGP RISE programme for working professionals"
+            ]
+          },
+          {
+            "year": 2023,
+            "title": "The Achievements",
+            "points": [
+              "Our first Demo Day where students pitched their startups to 100+ VCs",
+              "Former SoftBank India head, Manoj Kohli is appointed Chairperson"
+            ]
+          },
+          {
+            "year": 2024,
+            "title": "The Journey Ahead",
+            "points": [
+              "We grow from a 50-member team to more than 300",
+              "We welcome our second UG cohort of 250+ students",
+              "Launch a first-of-its-kind industry-academia collaboration with PwC India"
+            ]
+          }
+        ],
+        "image": "/unique-idea.jpg"
+      },
+      "ABSection5": {
+        "subtitle": "\u2726 Building a Disruptive B-School",
+        "title": "Creating a Community of Changemakers",
+        "image": "/chairperson.jpg",
+        "quote": {
+          "title": "Hear From Our Chairperson",
+          "name": "Mr. Manoj Kohli",
+          "text": "I am inspired by the collective passion and drive of our students, faculty, and staff. We are a community of changemakers, pioneers, and lifelong learners who are committed to making a positive impact. A future of education is not just a means to an end, but a transformative journey that shapes leaders and innovators."
+        }
+      },
+      "ABSection6": {
+        "tabList": [
+          {
+            "key": "governors",
+            "label": "Board Of Governors"
+          },
+          {
+            "key": "executives",
+            "label": "Executive Leaders"
+          },
+          {
+            "key": "residents",
+            "label": "Masters In Residence"
+          }
+        ],
+        "leadersData": {
+          "governors": [
+            {
+              "name": "Manoj Kohli",
+              "title": "Chairman",
+              "position": "Former CEO & MD, Bharti Airtel",
+              "image": "/governors/manoj.png"
+            },
+            {
+              "name": "Pankaj Bansal",
+              "title": "Board Member",
+              "position": "Co-Founder & Group CEO, PeopleStrong",
+              "image": "/governors/pankaj.png"
+            }
+          ],
+          "executives": [
+            {
+              "name": "Pratham Mittal",
+              "title": "Founder",
+              "position": "BA/BS, University of Pennsylvania\nCoFounder, Outgrow",
+              "image": "/executives/pratham.png"
+            },
+            {
+              "name": "Mahak Garg",
+              "title": "Director, PGP TBM",
+              "position": "MBA, Stanford GSB\nEx-Founder, Udayy | Forbes 30U30",
+              "image": "/executives/mahak.png"
+            }
+          ],
+          "residents": [
+            {
+              "name": "Dr. Nandini Seth",
+              "title": "Ph.D, IIM Bangalore",
+              "position": "Quantitative Techniques",
+              "image": "/residents/nandini.png"
+            },
+            {
+              "name": "Dr. Garima Chaklader",
+              "title": "Ph.D, IIM Bangalore",
+              "position": "Managerial Economics, Econometrics",
+              "image": "/residents/garima.png"
+            }
+          ]
+        }
+      },
+      "ABSection7": {
+        "title": "Our Affiliations & Collaborations",
+        "subtitle": "\u2728 UNMATCHED OPPORTUNITIES",
+        "description": "We foster affiliations and collaborations with renowned institutions, companies, brands, academic experts, and industry leaders, creating a diverse network that elevates your learning and provides you with the best opportunities.",
+        "tabs": [
+          "Practitioners",
+          "Academic Collaborations",
+          "Accreditation Bodies",
+          "NGOs & Communities",
+          "Govt. Bodies"
+        ],
+        "tabData": {
+          "Practitioners": [
+            "/logos/nse.png",
+            "/logos/harvard.png",
+            "/logos/tufts.png",
+            "/logos/mit.png",
+            "/logos/cornell.png",
+            "/logos/standardchartered.png",
+            "/logos/imperial.png",
+            "/logos/iima.png",
+            "/logos/iimb.png",
+            "/logos/iimc.png",
+            "/logos/bofa.png",
+            "/logos/paypal.png",
+            "/logos/nasa.png",
+            "/logos/apple.png",
+            "/logos/bcg.png",
+            "/logos/makemytrip.png",
+            "/logos/hero.png",
+            "/logos/benz.png",
+            "/logos/adityabirla.png",
+            "/logos/morganstanley.png",
+            "/logos/mckinsey.png",
+            "/logos/nab.png"
+          ],
+          "Academic Collaborations": [],
+          "Accreditation Bodies": [],
+          "NGOs & Communities": [],
+          "Govt. Bodies": []
+        }
+      }
     }
 }
